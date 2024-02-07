@@ -14,8 +14,8 @@ function App() {
   useEffect(() => {
     if (isCounting) {
       timer.current = setInterval(() => {
-        setCount((prev) => (prev + 1) % 10);
-      }, 1000);
+        setCount((prev) => (prev + 1) % 11);
+      }, 500);
     } else {
       clearInterval(timer.current);
     }
